@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E022E4917FD97CD00B2EFEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E022E4817FD97CD00B2EFEA /* Foundation.framework */; };
+		7E022E4B17FD97CD00B2EFEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E022E4A17FD97CD00B2EFEA /* CoreGraphics.framework */; };
+		7E022E4D17FD97CE00B2EFEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E022E4C17FD97CE00B2EFEA /* UIKit.framework */; };
+		7E022E5317FD97CE00B2EFEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E022E5117FD97CE00B2EFEA /* InfoPlist.strings */; };
+		7E022E5517FD97CE00B2EFEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E022E5417FD97CE00B2EFEA /* main.m */; };
+		7E022E5917FD97CE00B2EFEA /* BTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E022E5817FD97CE00B2EFEA /* BTAppDelegate.m */; };
+		7E022E5B17FD97CE00B2EFEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E022E5A17FD97CE00B2EFEA /* Images.xcassets */; };
+		7E022E6217FD97CE00B2EFEA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E022E6117FD97CE00B2EFEA /* XCTest.framework */; };
+		7E022E6317FD97CE00B2EFEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E022E4817FD97CD00B2EFEA /* Foundation.framework */; };
+		7E022E6417FD97CE00B2EFEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E022E4C17FD97CE00B2EFEA /* UIKit.framework */; };
+		7E022E6C17FD97CE00B2EFEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E022E6A17FD97CE00B2EFEA /* InfoPlist.strings */; };
+		7E022E6E17FD97CE00B2EFEA /* BellyTrackrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E022E6D17FD97CE00B2EFEA /* BellyTrackrTests.m */; };
+		7E022E7917FDA2AA00B2EFEA /* BTMeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E022E7817FDA2AA00B2EFEA /* BTMeasurementsViewController.m */; };
+		7E022E7C17FDA49200B2EFEA /* BTMeasurementsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E022E7B17FDA49200B2EFEA /* BTMeasurementsStore.m */; };
+		7E022E8117FEEEA500B2EFEA /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E022E8017FEEEA500B2EFEA /* HeaderView.xib */; };
+		7E022E841800DF4700B2EFEA /* BTNewMeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E022E831800DF4700B2EFEA /* BTNewMeasurementViewController.m */; };
+		7E022E861800DF8400B2EFEA /* BTNewMeasurementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E022E851800DF8400B2EFEA /* BTNewMeasurementView.xib */; };
+		7E02B0391804D0A500DBCB23 /* BTMeasurementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E02B0381804D0A500DBCB23 /* BTMeasurementCell.m */; };
+		7E02B03B1804D0D300DBCB23 /* BTMeasurementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E02B03A1804D0D300DBCB23 /* BTMeasurementCell.xib */; };
+		7E02B03D18051A5600DBCB23 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E02B03C18051A5600DBCB23 /* CoreData.framework */; };
+		7E02B04018051ACA00DBCB23 /* BellyTrackr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E02B03E18051ACA00DBCB23 /* BellyTrackr.xcdatamodeld */; };
+		7E02B043180585A800DBCB23 /* BTMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E02B042180585A800DBCB23 /* BTMeasurement.m */; };
+		7E02B047180D8C3000DBCB23 /* BTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E02B045180D8C3000DBCB23 /* BTSettingsViewController.m */; };
+		7E02B048180D8C3000DBCB23 /* BTSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E02B046180D8C3000DBCB23 /* BTSettingsViewController.xib */; };
+		7E27EC7D182940CA00CA78DE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E27EC7C182940CA00CA78DE /* CoreText.framework */; };
+		7E9934911819E64D00A054B4 /* BTNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9934901819E64D00A054B4 /* BTNavigationBar.m */; };
+		7E9934931819EA8400A054B4 /* BTNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E9934921819EA8400A054B4 /* BTNavigationBar.xib */; };
+		7EE672BF1810313600310D85 /* Alarm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672BE1810313600310D85 /* Alarm@2x.png */; };
+		7EE672C11810314100310D85 /* Alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672C01810314100310D85 /* Alarm.png */; };
+		7EE672C31810316600310D85 /* ChartUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672C21810316600310D85 /* ChartUp@2x.png */; };
+		7EE672C8181031C200310D85 /* ChartUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672C6181031C200310D85 /* ChartUp.png */; };
+		7EE672CD1810325600310D85 /* BTGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE672CB1810325600310D85 /* BTGraphsViewController.m */; };
+		7EE672CE1810325600310D85 /* BTGraphsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672CC1810325600310D85 /* BTGraphsViewController.xib */; };
+		7EE672D918103AA600310D85 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672CF18103AA600310D85 /* AppIcon29x29.png */; };
+		7EE672DA18103AA600310D85 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672D018103AA600310D85 /* AppIcon29x29@2x.png */; };
+		7EE672DB18103AA600310D85 /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672D118103AA600310D85 /* AppIcon40x40.png */; };
+		7EE672DC18103AA600310D85 /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672D218103AA600310D85 /* AppIcon40x40@2x.png */; };
+		7EE672DD18103AA600310D85 /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672D318103AA600310D85 /* AppIcon60x60.png */; };
+		7EE672DE18103AA600310D85 /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672D418103AA600310D85 /* AppIcon60x60@2x.png */; };
+		7EE672DF18103AA600310D85 /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672D518103AA600310D85 /* AppIcon76x76.png */; };
+		7EE672E018103AA600310D85 /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672D618103AA600310D85 /* AppIcon76x76@2x.png */; };
+		7EE672E118103AA600310D85 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672D718103AA600310D85 /* iTunesArtwork.png */; };
+		7EE672E218103AA600310D85 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672D818103AA600310D85 /* iTunesArtwork@2x.png */; };
+		7EE672E418103ABA00310D85 /* Ruler@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672E318103ABA00310D85 /* Ruler@2x.png */; };
+		7EE672E618103AC600310D85 /* Ruler.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE672E518103AC600310D85 /* Ruler.png */; };
+		7EF6A25818110D230012882D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF6A25718110D230012882D /* QuartzCore.framework */; };
+		7EF6A25D1811A84E0012882D /* BTGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF6A25C1811A84E0012882D /* BTGraphView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E022E6517FD97CE00B2EFEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E022E3D17FD97CD00B2EFEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E022E4417FD97CD00B2EFEA;
+			remoteInfo = BellyTrackr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E022E4517FD97CD00B2EFEA /* BellyTrackr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BellyTrackr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E022E4817FD97CD00B2EFEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E022E4A17FD97CD00B2EFEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E022E4C17FD97CE00B2EFEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E022E5017FD97CE00B2EFEA /* BellyTrackr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BellyTrackr-Info.plist"; sourceTree = "<group>"; };
+		7E022E5217FD97CE00B2EFEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E022E5417FD97CE00B2EFEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E022E5617FD97CE00B2EFEA /* BellyTrackr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BellyTrackr-Prefix.pch"; sourceTree = "<group>"; };
+		7E022E5717FD97CE00B2EFEA /* BTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAppDelegate.h; sourceTree = "<group>"; };
+		7E022E5817FD97CE00B2EFEA /* BTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAppDelegate.m; sourceTree = "<group>"; };
+		7E022E5A17FD97CE00B2EFEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7E022E6017FD97CE00B2EFEA /* BellyTrackrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BellyTrackrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E022E6117FD97CE00B2EFEA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7E022E6917FD97CE00B2EFEA /* BellyTrackrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BellyTrackrTests-Info.plist"; sourceTree = "<group>"; };
+		7E022E6B17FD97CE00B2EFEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E022E6D17FD97CE00B2EFEA /* BellyTrackrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BellyTrackrTests.m; sourceTree = "<group>"; };
+		7E022E7717FDA2AA00B2EFEA /* BTMeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTMeasurementsViewController.h; sourceTree = "<group>"; };
+		7E022E7817FDA2AA00B2EFEA /* BTMeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTMeasurementsViewController.m; sourceTree = "<group>"; };
+		7E022E7A17FDA49200B2EFEA /* BTMeasurementsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTMeasurementsStore.h; sourceTree = "<group>"; };
+		7E022E7B17FDA49200B2EFEA /* BTMeasurementsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTMeasurementsStore.m; sourceTree = "<group>"; };
+		7E022E8017FEEEA500B2EFEA /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		7E022E821800DF4700B2EFEA /* BTNewMeasurementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTNewMeasurementViewController.h; sourceTree = "<group>"; };
+		7E022E831800DF4700B2EFEA /* BTNewMeasurementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTNewMeasurementViewController.m; sourceTree = "<group>"; };
+		7E022E851800DF8400B2EFEA /* BTNewMeasurementView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTNewMeasurementView.xib; sourceTree = "<group>"; };
+		7E02B0371804D0A500DBCB23 /* BTMeasurementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTMeasurementCell.h; sourceTree = "<group>"; };
+		7E02B0381804D0A500DBCB23 /* BTMeasurementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTMeasurementCell.m; sourceTree = "<group>"; };
+		7E02B03A1804D0D300DBCB23 /* BTMeasurementCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTMeasurementCell.xib; sourceTree = "<group>"; };
+		7E02B03C18051A5600DBCB23 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7E02B03F18051ACA00DBCB23 /* BellyTrackr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BellyTrackr.xcdatamodel; sourceTree = "<group>"; };
+		7E02B041180585A800DBCB23 /* BTMeasurement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTMeasurement.h; sourceTree = "<group>"; };
+		7E02B042180585A800DBCB23 /* BTMeasurement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTMeasurement.m; sourceTree = "<group>"; };
+		7E02B044180D8C3000DBCB23 /* BTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSettingsViewController.h; sourceTree = "<group>"; };
+		7E02B045180D8C3000DBCB23 /* BTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSettingsViewController.m; sourceTree = "<group>"; };
+		7E02B046180D8C3000DBCB23 /* BTSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTSettingsViewController.xib; sourceTree = "<group>"; };
+		7E27EC7C182940CA00CA78DE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		7E99348F1819E64D00A054B4 /* BTNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTNavigationBar.h; sourceTree = "<group>"; };
+		7E9934901819E64D00A054B4 /* BTNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTNavigationBar.m; sourceTree = "<group>"; };
+		7E9934921819EA8400A054B4 /* BTNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTNavigationBar.xib; sourceTree = "<group>"; };
+		7EE672BE1810313600310D85 /* Alarm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alarm@2x.png"; sourceTree = "<group>"; };
+		7EE672C01810314100310D85 /* Alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alarm.png; sourceTree = "<group>"; };
+		7EE672C21810316600310D85 /* ChartUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChartUp@2x.png"; sourceTree = "<group>"; };
+		7EE672C6181031C200310D85 /* ChartUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChartUp.png; sourceTree = "<group>"; };
+		7EE672CA1810325600310D85 /* BTGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGraphsViewController.h; sourceTree = "<group>"; };
+		7EE672CB1810325600310D85 /* BTGraphsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGraphsViewController.m; sourceTree = "<group>"; };
+		7EE672CC1810325600310D85 /* BTGraphsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTGraphsViewController.xib; sourceTree = "<group>"; };
+		7EE672CF18103AA600310D85 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
+		7EE672D018103AA600310D85 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		7EE672D118103AA600310D85 /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon40x40.png; sourceTree = "<group>"; };
+		7EE672D218103AA600310D85 /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		7EE672D318103AA600310D85 /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60x60.png; sourceTree = "<group>"; };
+		7EE672D418103AA600310D85 /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		7EE672D518103AA600310D85 /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon76x76.png; sourceTree = "<group>"; };
+		7EE672D618103AA600310D85 /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x.png"; sourceTree = "<group>"; };
+		7EE672D718103AA600310D85 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		7EE672D818103AA600310D85 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		7EE672E318103ABA00310D85 /* Ruler@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ruler@2x.png"; sourceTree = "<group>"; };
+		7EE672E518103AC600310D85 /* Ruler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ruler.png; sourceTree = "<group>"; };
+		7EF6A25718110D230012882D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7EF6A25918110D330012882D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7EF6A25B1811A84E0012882D /* BTGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGraphView.h; sourceTree = "<group>"; };
+		7EF6A25C1811A84E0012882D /* BTGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGraphView.m; sourceTree = "<group>"; };
+		7EF6A25E1811AC4C0012882D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E022E4217FD97CD00B2EFEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E27EC7D182940CA00CA78DE /* CoreText.framework in Frameworks */,
+				7EF6A25818110D230012882D /* QuartzCore.framework in Frameworks */,
+				7E02B03D18051A5600DBCB23 /* CoreData.framework in Frameworks */,
+				7E022E4B17FD97CD00B2EFEA /* CoreGraphics.framework in Frameworks */,
+				7E022E4D17FD97CE00B2EFEA /* UIKit.framework in Frameworks */,
+				7E022E4917FD97CD00B2EFEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E022E5D17FD97CE00B2EFEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E022E6217FD97CE00B2EFEA /* XCTest.framework in Frameworks */,
+				7E022E6417FD97CE00B2EFEA /* UIKit.framework in Frameworks */,
+				7E022E6317FD97CE00B2EFEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E022E3C17FD97CD00B2EFEA = {
+			isa = PBXGroup;
+			children = (
+				7EF6A25E1811AC4C0012882D /* Constants.h */,
+				7E022E4E17FD97CE00B2EFEA /* BellyTrackr */,
+				7E022E6717FD97CE00B2EFEA /* BellyTrackrTests */,
+				7E022E4717FD97CD00B2EFEA /* Frameworks */,
+				7E022E4617FD97CD00B2EFEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E022E4617FD97CD00B2EFEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E022E4517FD97CD00B2EFEA /* BellyTrackr.app */,
+				7E022E6017FD97CE00B2EFEA /* BellyTrackrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E022E4717FD97CD00B2EFEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E27EC7C182940CA00CA78DE /* CoreText.framework */,
+				7EF6A25918110D330012882D /* Accelerate.framework */,
+				7EF6A25718110D230012882D /* QuartzCore.framework */,
+				7E02B03C18051A5600DBCB23 /* CoreData.framework */,
+				7E022E4817FD97CD00B2EFEA /* Foundation.framework */,
+				7E022E4A17FD97CD00B2EFEA /* CoreGraphics.framework */,
+				7E022E4C17FD97CE00B2EFEA /* UIKit.framework */,
+				7E022E6117FD97CE00B2EFEA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E022E4E17FD97CE00B2EFEA /* BellyTrackr */ = {
+			isa = PBXGroup;
+			children = (
+				7E022E5717FD97CE00B2EFEA /* BTAppDelegate.h */,
+				7E022E5817FD97CE00B2EFEA /* BTAppDelegate.m */,
+				7EE672E718104C7400310D85 /* View Controllers */,
+				7EE672EA18104CC300310D85 /* Views */,
+				7EE672E918104CA200310D85 /* Models */,
+				7EE672E818104C8100310D85 /* Stores */,
+				7E02B03E18051ACA00DBCB23 /* BellyTrackr.xcdatamodeld */,
+				7E022E5A17FD97CE00B2EFEA /* Images.xcassets */,
+				7EF6A25F1811AF040012882D /* Tab Icons */,
+				7EF6A2601811AF100012882D /* App Icons */,
+				7E022E4F17FD97CE00B2EFEA /* Supporting Files */,
+			);
+			path = BellyTrackr;
+			sourceTree = "<group>";
+		};
+		7E022E4F17FD97CE00B2EFEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E022E5017FD97CE00B2EFEA /* BellyTrackr-Info.plist */,
+				7E022E5117FD97CE00B2EFEA /* InfoPlist.strings */,
+				7E022E5417FD97CE00B2EFEA /* main.m */,
+				7E022E5617FD97CE00B2EFEA /* BellyTrackr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E022E6717FD97CE00B2EFEA /* BellyTrackrTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E022E6D17FD97CE00B2EFEA /* BellyTrackrTests.m */,
+				7E022E6817FD97CE00B2EFEA /* Supporting Files */,
+			);
+			path = BellyTrackrTests;
+			sourceTree = "<group>";
+		};
+		7E022E6817FD97CE00B2EFEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E022E6917FD97CE00B2EFEA /* BellyTrackrTests-Info.plist */,
+				7E022E6A17FD97CE00B2EFEA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EE672E718104C7400310D85 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E022E7717FDA2AA00B2EFEA /* BTMeasurementsViewController.h */,
+				7E022E7817FDA2AA00B2EFEA /* BTMeasurementsViewController.m */,
+				7E022E821800DF4700B2EFEA /* BTNewMeasurementViewController.h */,
+				7E022E831800DF4700B2EFEA /* BTNewMeasurementViewController.m */,
+				7EE672CA1810325600310D85 /* BTGraphsViewController.h */,
+				7EE672CB1810325600310D85 /* BTGraphsViewController.m */,
+				7E02B044180D8C3000DBCB23 /* BTSettingsViewController.h */,
+				7E02B045180D8C3000DBCB23 /* BTSettingsViewController.m */,
+				7E02B0371804D0A500DBCB23 /* BTMeasurementCell.h */,
+				7E02B0381804D0A500DBCB23 /* BTMeasurementCell.m */,
+				7E99348F1819E64D00A054B4 /* BTNavigationBar.h */,
+				7E9934901819E64D00A054B4 /* BTNavigationBar.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7EE672E818104C8100310D85 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				7E022E7A17FDA49200B2EFEA /* BTMeasurementsStore.h */,
+				7E022E7B17FDA49200B2EFEA /* BTMeasurementsStore.m */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		7EE672E918104CA200310D85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E02B041180585A800DBCB23 /* BTMeasurement.h */,
+				7E02B042180585A800DBCB23 /* BTMeasurement.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7EE672EA18104CC300310D85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EF6A25B1811A84E0012882D /* BTGraphView.h */,
+				7EF6A25C1811A84E0012882D /* BTGraphView.m */,
+				7E022E8017FEEEA500B2EFEA /* HeaderView.xib */,
+				7E02B03A1804D0D300DBCB23 /* BTMeasurementCell.xib */,
+				7E022E851800DF8400B2EFEA /* BTNewMeasurementView.xib */,
+				7EE672CC1810325600310D85 /* BTGraphsViewController.xib */,
+				7E02B046180D8C3000DBCB23 /* BTSettingsViewController.xib */,
+				7E9934921819EA8400A054B4 /* BTNavigationBar.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7EF6A25F1811AF040012882D /* Tab Icons */ = {
+			isa = PBXGroup;
+			children = (
+				7EE672E518103AC600310D85 /* Ruler.png */,
+				7EE672E318103ABA00310D85 /* Ruler@2x.png */,
+				7EE672C6181031C200310D85 /* ChartUp.png */,
+				7EE672C21810316600310D85 /* ChartUp@2x.png */,
+				7EE672C01810314100310D85 /* Alarm.png */,
+				7EE672BE1810313600310D85 /* Alarm@2x.png */,
+			);
+			name = "Tab Icons";
+			sourceTree = "<group>";
+		};
+		7EF6A2601811AF100012882D /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				7EE672CF18103AA600310D85 /* AppIcon29x29.png */,
+				7EE672D018103AA600310D85 /* AppIcon29x29@2x.png */,
+				7EE672D118103AA600310D85 /* AppIcon40x40.png */,
+				7EE672D218103AA600310D85 /* AppIcon40x40@2x.png */,
+				7EE672D318103AA600310D85 /* AppIcon60x60.png */,
+				7EE672D418103AA600310D85 /* AppIcon60x60@2x.png */,
+				7EE672D518103AA600310D85 /* AppIcon76x76.png */,
+				7EE672D618103AA600310D85 /* AppIcon76x76@2x.png */,
+				7EE672D718103AA600310D85 /* iTunesArtwork.png */,
+				7EE672D818103AA600310D85 /* iTunesArtwork@2x.png */,
+			);
+			name = "App Icons";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E022E4417FD97CD00B2EFEA /* BellyTrackr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E022E7117FD97CE00B2EFEA /* Build configuration list for PBXNativeTarget "BellyTrackr" */;
+			buildPhases = (
+				7E022E4117FD97CD00B2EFEA /* Sources */,
+				7E022E4217FD97CD00B2EFEA /* Frameworks */,
+				7E022E4317FD97CD00B2EFEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BellyTrackr;
+			productName = BellyTrackr;
+			productReference = 7E022E4517FD97CD00B2EFEA /* BellyTrackr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E022E5F17FD97CE00B2EFEA /* BellyTrackrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E022E7417FD97CE00B2EFEA /* Build configuration list for PBXNativeTarget "BellyTrackrTests" */;
+			buildPhases = (
+				7E022E5C17FD97CE00B2EFEA /* Sources */,
+				7E022E5D17FD97CE00B2EFEA /* Frameworks */,
+				7E022E5E17FD97CE00B2EFEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E022E6617FD97CE00B2EFEA /* PBXTargetDependency */,
+			);
+			name = BellyTrackrTests;
+			productName = BellyTrackrTests;
+			productReference = 7E022E6017FD97CE00B2EFEA /* BellyTrackrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E022E3D17FD97CD00B2EFEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "So, Inc";
+				TargetAttributes = {
+					7E022E5F17FD97CE00B2EFEA = {
+						TestTargetID = 7E022E4417FD97CD00B2EFEA;
+					};
+				};
+			};
+			buildConfigurationList = 7E022E4017FD97CD00B2EFEA /* Build configuration list for PBXProject "BellyTrackr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E022E3C17FD97CD00B2EFEA;
+			productRefGroup = 7E022E4617FD97CD00B2EFEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E022E4417FD97CD00B2EFEA /* BellyTrackr */,
+				7E022E5F17FD97CE00B2EFEA /* BellyTrackrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E022E4317FD97CD00B2EFEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EE672DB18103AA600310D85 /* AppIcon40x40.png in Resources */,
+				7E02B03B1804D0D300DBCB23 /* BTMeasurementCell.xib in Resources */,
+				7EE672DA18103AA600310D85 /* AppIcon29x29@2x.png in Resources */,
+				7E022E8117FEEEA500B2EFEA /* HeaderView.xib in Resources */,
+				7EE672DF18103AA600310D85 /* AppIcon76x76.png in Resources */,
+				7EE672E118103AA600310D85 /* iTunesArtwork.png in Resources */,
+				7EE672CE1810325600310D85 /* BTGraphsViewController.xib in Resources */,
+				7E022E5317FD97CE00B2EFEA /* InfoPlist.strings in Resources */,
+				7E02B048180D8C3000DBCB23 /* BTSettingsViewController.xib in Resources */,
+				7E022E861800DF8400B2EFEA /* BTNewMeasurementView.xib in Resources */,
+				7EE672E218103AA600310D85 /* iTunesArtwork@2x.png in Resources */,
+				7EE672DD18103AA600310D85 /* AppIcon60x60.png in Resources */,
+				7EE672DE18103AA600310D85 /* AppIcon60x60@2x.png in Resources */,
+				7EE672C8181031C200310D85 /* ChartUp.png in Resources */,
+				7EE672C31810316600310D85 /* ChartUp@2x.png in Resources */,
+				7E022E5B17FD97CE00B2EFEA /* Images.xcassets in Resources */,
+				7EE672E018103AA600310D85 /* AppIcon76x76@2x.png in Resources */,
+				7EE672E618103AC600310D85 /* Ruler.png in Resources */,
+				7EE672D918103AA600310D85 /* AppIcon29x29.png in Resources */,
+				7EE672C11810314100310D85 /* Alarm.png in Resources */,
+				7EE672DC18103AA600310D85 /* AppIcon40x40@2x.png in Resources */,
+				7EE672BF1810313600310D85 /* Alarm@2x.png in Resources */,
+				7EE672E418103ABA00310D85 /* Ruler@2x.png in Resources */,
+				7E9934931819EA8400A054B4 /* BTNavigationBar.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E022E5E17FD97CE00B2EFEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E022E6C17FD97CE00B2EFEA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E022E4117FD97CD00B2EFEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E022E7C17FDA49200B2EFEA /* BTMeasurementsStore.m in Sources */,
+				7E022E5917FD97CE00B2EFEA /* BTAppDelegate.m in Sources */,
+				7EF6A25D1811A84E0012882D /* BTGraphView.m in Sources */,
+				7E02B0391804D0A500DBCB23 /* BTMeasurementCell.m in Sources */,
+				7EE672CD1810325600310D85 /* BTGraphsViewController.m in Sources */,
+				7E022E5517FD97CE00B2EFEA /* main.m in Sources */,
+				7E022E841800DF4700B2EFEA /* BTNewMeasurementViewController.m in Sources */,
+				7E9934911819E64D00A054B4 /* BTNavigationBar.m in Sources */,
+				7E022E7917FDA2AA00B2EFEA /* BTMeasurementsViewController.m in Sources */,
+				7E02B043180585A800DBCB23 /* BTMeasurement.m in Sources */,
+				7E02B04018051ACA00DBCB23 /* BellyTrackr.xcdatamodeld in Sources */,
+				7E02B047180D8C3000DBCB23 /* BTSettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E022E5C17FD97CE00B2EFEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E022E6E17FD97CE00B2EFEA /* BellyTrackrTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E022E6617FD97CE00B2EFEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E022E4417FD97CD00B2EFEA /* BellyTrackr */;
+			targetProxy = 7E022E6517FD97CE00B2EFEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E022E5117FD97CE00B2EFEA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E022E5217FD97CE00B2EFEA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E022E6A17FD97CE00B2EFEA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E022E6B17FD97CE00B2EFEA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E022E6F17FD97CE00B2EFEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E022E7017FD97CE00B2EFEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E022E7217FD97CE00B2EFEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BellyTrackr/BellyTrackr-Prefix.pch";
+				INFOPLIST_FILE = "BellyTrackr/BellyTrackr-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E022E7317FD97CE00B2EFEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BellyTrackr/BellyTrackr-Prefix.pch";
+				INFOPLIST_FILE = "BellyTrackr/BellyTrackr-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7E022E7517FD97CE00B2EFEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BellyTrackr.app/BellyTrackr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BellyTrackr/BellyTrackr-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BellyTrackrTests/BellyTrackrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7E022E7617FD97CE00B2EFEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BellyTrackr.app/BellyTrackr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BellyTrackr/BellyTrackr-Prefix.pch";
+				INFOPLIST_FILE = "BellyTrackrTests/BellyTrackrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E022E4017FD97CD00B2EFEA /* Build configuration list for PBXProject "BellyTrackr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E022E6F17FD97CE00B2EFEA /* Debug */,
+				7E022E7017FD97CE00B2EFEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E022E7117FD97CE00B2EFEA /* Build configuration list for PBXNativeTarget "BellyTrackr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E022E7217FD97CE00B2EFEA /* Debug */,
+				7E022E7317FD97CE00B2EFEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E022E7417FD97CE00B2EFEA /* Build configuration list for PBXNativeTarget "BellyTrackrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E022E7517FD97CE00B2EFEA /* Debug */,
+				7E022E7617FD97CE00B2EFEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E02B03E18051ACA00DBCB23 /* BellyTrackr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E02B03F18051ACA00DBCB23 /* BellyTrackr.xcdatamodel */,
+			);
+			currentVersion = 7E02B03F18051ACA00DBCB23 /* BellyTrackr.xcdatamodel */;
+			path = BellyTrackr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7E022E3D17FD97CD00B2EFEA /* Project object */;
+}
