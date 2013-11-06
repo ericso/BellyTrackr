@@ -28,15 +28,6 @@
     return self;
 }
 
-//- (UIView *)headerView
-//{
-//    if (!headerView) {
-//        // Load HeaderView.xib
-//        [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:nil];
-//    }
-//    return headerView;
-//}
-
 // Ensure all instances of BTMeasurementsViewController return with the UITableViewStylePlain style
 - (id)initWithStyle:(UITableViewStyle)style
 {
