@@ -53,7 +53,7 @@
     CGRect frameRect = [(BTGraphView *)[progressScrollView subviews][0] frame];
     frameRect.size.width = kOffsetX + [reversedData count] * kStepX;
     [(BTGraphView *)[progressScrollView subviews][0] setFrame:frameRect];
-        
+    
     // Set the size of the scroll view's content so that it can scroll
     CGSize scrollSize = CGSizeMake(kOffsetX + [reversedData count] * kStepX, kDefaultGraphHeight);
     [progressScrollView setContentSize:scrollSize];

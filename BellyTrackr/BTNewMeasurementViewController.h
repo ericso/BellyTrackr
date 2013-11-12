@@ -15,6 +15,7 @@
     __weak IBOutlet UIButton *cancelButton;
     __weak IBOutlet UIButton *addButton;
     __weak IBOutlet UITextField *measurementField;
+    __weak IBOutlet UISegmentedControl *unitsSegmentedControl;
 }
 
 @property (nonatomic, strong) BTMeasurement *measurement;
@@ -22,5 +23,6 @@
 
 - (IBAction)addMeasurementFromModal:(id)sender;
 - (IBAction)cancelMeasurement:(id)sender;
+- (IBAction)changeUnits:(id)sender;
 
 @end

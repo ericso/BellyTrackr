@@ -13,6 +13,8 @@
     IBOutlet UIView *headerView;
 }
 
+@property (nonatomic, assign) NSInteger uintsToUse;
+
 //- (UIView *)headerView;
 
 - (IBAction)addNewMeasurement:(id)sender;

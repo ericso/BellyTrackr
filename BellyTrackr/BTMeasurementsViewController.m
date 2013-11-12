@@ -14,6 +14,8 @@
 
 @implementation BTMeasurementsViewController
 
+@synthesize uintsToUse;
+
 - (id)init
 {
 //    self = [super initWithStyle:UITableViewStyleGrouped];
@@ -24,6 +26,9 @@
         [tbi setTitle:@"Measurements"];
         UIImage *i = [UIImage imageNamed:@"Ruler.png"];
         [tbi setImage:i];
+        
+        // Set the uints to the default
+        uintsToUse = 0; // Set to default 0 == cm; 1 == inches
     }
     return self;
 }
@@ -92,6 +97,9 @@
     
     // Completion block for successfully adding a measurement
     void (^measurementCompletion)(void) = ^void(void) {
+        // Uints?
+        NSLog(@"uints: %d", uintsToUse);
+        
         // Figure out where that measurement is in the array
         int lastRow = [[[BTMeasurementsStore sharedStore] allMeasurements] indexOfObject:newMeasurement];
         

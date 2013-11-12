@@ -7,6 +7,7 @@
 //
 
 #import "BTNewMeasurementViewController.h"
+#import "BTMeasurementsViewController.h"
 #import "BTMeasurement.h"
 #import "BTMeasurementsStore.h"
 
@@ -22,6 +23,7 @@
     
     // Check to see if the user entered anything in the text field
     if ([measurementField.text length] > 0) {
+        // Dismiss the modal; presenting view controller will handel adding the measurement
         [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
     } else {
         // If no entry, alert the user
@@ -43,6 +45,20 @@
     [[BTMeasurementsStore sharedStore] removeMeasurement:[self measurement]];
     
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
+}
+
+// User changes the units
+- (IBAction)changeUnits:(id)sender
+{
+    if (unitsSegmentedControl.selectedSegmentIndex == 0) {
+        NSLog(@"cm selected");
+        [(BTMeasurementsViewController *)[self presentingViewController] setUintsToUse: 0];
+//        [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
+    } else if (unitsSegmentedControl.selectedSegmentIndex == 1) {
+        NSLog(@"inches selected");
+        [(BTMeasurementsViewController *)[self presentingViewController] setUintsToUse: 1];
+//        [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 // Before the modal view disappears, we want to save the entered measurement
