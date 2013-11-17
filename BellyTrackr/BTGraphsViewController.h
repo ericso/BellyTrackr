@@ -11,6 +11,7 @@
 @interface BTGraphsViewController : UIViewController <UIScrollViewDelegate>
 {
     __weak IBOutlet UIScrollView *progressScrollView;
+    __weak IBOutlet UILabel *dateRangeLabel;
 }
 
 @end

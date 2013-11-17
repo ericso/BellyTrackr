@@ -58,6 +58,23 @@
     CGSize scrollSize = CGSizeMake(kOffsetX + [reversedData count] * kStepX, kDefaultGraphHeight);
     [progressScrollView setContentSize:scrollSize];
     
+    // Get the date range and update the label
+    NSDate *firstDate = [NSDate dateWithTimeIntervalSinceReferenceDate:((BTMeasurement *)reversedData[0]).dateCreated];
+    NSDate *lastDate = [NSDate dateWithTimeIntervalSinceReferenceDate:((BTMeasurement *)reversedData[[reversedData count]-1]).dateCreated];
+    
+    // Create a date formatter
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    [dateFormatter setDateFormat:@"MM-dd"];
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+    [dateFormatter setLocale:usLocale];
+    
+    // Set the date string
+//    [dateRangeLabel setText:[NSString stringWithFormat:@"%@ - %@",[dateFormatter stringFromDate:firstDate], [dateFormatter stringFromDate:lastDate]]];
+    [dateRangeLabel setText:[NSString stringWithFormat:@"%@ - %@",[dateFormatter stringFromDate:firstDate], [dateFormatter stringFromDate:lastDate]]];
+    
+    // Redraw the view
     [(BTGraphView *)[progressScrollView subviews][0] setNeedsDisplay];
 }
 

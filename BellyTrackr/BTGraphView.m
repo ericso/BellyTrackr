@@ -84,7 +84,7 @@
         // Set the date string
         NSString *label = [NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:date]];
 //        CGContextShowTextAtPoint(ctx, kOffsetX + i * kStepX, kGraphBottom, [label cStringUsingEncoding:NSUTF8StringEncoding], [label length]);
-        [label drawAtPoint:CGPointMake(kOffsetX + i * kStepX, kGraphBottom) withAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:kFontSize]}];
+        [label drawAtPoint:CGPointMake(kOffsetX + i * kStepX, kGraphBottom - 50) withAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:kFontSize]}];
     }
     
 }
